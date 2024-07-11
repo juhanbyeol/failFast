@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <base href="https://pasilmo.websim.ai/submit-registration">
+  <title>Registration Successful - Pasilmo: Fail Fast Gathering</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #6a0dad;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 0.8;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #FFD700;
+      text-align: center;
+    }
+
+    .success-message {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .user-info {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+    }
+
+    .user-info h3 {
+      margin-top: 0;
+      color: #FFD700;
+    }
+
+    .user-info p {
+      margin: 0.5rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #FFD700;
+      color: #6a0dad;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .cta {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <header class="header">
+      <h1 class="logo">빠실모</h1>
+      <p>빠르게 실패 하는 모임</p>
+    </header>
+  </div>
+  <main class="content">
+    <h2>등록완료!</h2>
+    <div class="success-message">
+      <p>빠실모에 오신 것을 환영합니다. <span id="name"></span>! 빠르게 실패하고 더 빨리 성공하는 여정이 지금 시작됩니다.</p>
+    </div>
+
+    <div class="user-info">
+      <h3>멤버님의 상세 정보:</h3>
+      <p><strong>이름:</strong> onestar</p>
+      <p><strong>이메일:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__">byeol4762@gmai.com</a></p>
+      <p><strong>역할:</strong> 호스트</p>
+      <p><strong>챌린지 기간</strong> 3주</p>
+      <p><strong>목표 또는 다짐:</strong> 나는 2027년에 바이크 인플루언서로 월순수익 1억 자산가가 되었다.</p>
+    </div>
+
+    <div class="next-steps">
+      <h3>다음 단계:</h3>
+      <ol>
+        <li>호스트 역할에 대한 확인 메시지와 중요한 정보가 담긴 이메일을 확인하세요.</li>
+        <li>게스트를 초대하여 흥미진진한 챌린지를 만들어보세요.</li>
+        <li>첫날의 목표를 준비하고 이를 멤버들과 공유할 준비를 하세요.</li>
+        <li>채팅방, 게시판 등 플랫폼의 기능을 알아보세요.</li>
+      </ol>
+    </div>
+
+    <div class="cta">
+      <a href="http://127.0.0.1:5500/dashboard.html" class="btn">대시보드로 이동</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 빠실모. Fail Fast, Succeed Faster.</p>
+  </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const name = document.getElementById('name');
+    name.textContent = "oneStar";
+  });
+</script>
+</body>
+</html>
