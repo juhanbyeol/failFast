@@ -1,166 +1,150 @@
-<html><head><base href="https://pasilmo.com/" /><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pasilmo - Fail Fast Gathering</title><style>
+<html>
+
+<head>
+  <base href="https://pasilmo.websim.ai/" />
+  <title>Pasilmo: Fail Fast Gathering</title>
+  <style>
     body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #6a0dad;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-    header {
-        background-color: #1a5f7a;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-        border-radius: 5px;
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
     }
-    nav {
-        background-color: #2c8cb0;
-        padding: 0.5rem;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    nav ul {
-        list-style-type: none;
-        padding: 0;
+
+    .background {
+        /* Ensure the div takes the full viewport height */
+        height: 100vh;
+        /* Set the background image */
+        background-image: url('http://127.0.0.1:5500/images/bg_img.jpg');
+        /* Make sure the background covers the whole area */
+        background-size: cover;
+        /* Center the background image */
+        background-position: center;
+        /* Keep the background fixed in place */
+        background-attachment: fixed;
+        /* Optional: Set background repeat to no-repeat */
+        background-repeat: no-repeat;
+        /* Center content inside the div */
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
+
+    .logo {
+      font-size: 3rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
     }
-    main {
-        background-color: #fff;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    @keyframes flicker {
+      0% {
+        opacity: 0.8;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
-    h1, h2, h3 {
-        color: #1a5f7a;
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
-    .cta-button {
-        display: inline-block;
-        background-color: #ff6b6b;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+
+    h2 {
+      color: #FFD700;
     }
-    .cta-button:hover {
-        background-color: #ff4757;
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
     }
+
     .feature {
-        background-color: #e9ecef;
-        border-radius: 5px;
-        padding: 15px;
-        margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
     }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #FFD700;
+      color: #6a0dad;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
     footer {
-        text-align: center;
-        margin-top: 20px;
-        padding: 10px;
-        background-color: #1a5f7a;
-        color: #fff;
-        border-radius: 5px;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      background-color: rgba(0, 0, 0, 0.2);
     }
-</style>
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Pasilmo</h1>
-        <p>Fail Fast Gathering - Embrace Failure, Accelerate Success</p>
+
+<body class="background">
+    <header class="header">
+      <h1 class="logo">빠실모</h1>
+      <p>빠르게 실패 하는 모임</p>
     </header>
+    <main class="content">
+      <h2>수많은 실패를 통해 성장해요.</h2>
+      <p>빠르게 실패하는 모임에 오신것을 환영합니다. "빠르게 싫패하기"라는 책에서 영감을 받아 최대 10명의 참가자가 모여 3주간 챌린지를 할 수 있는 공간을 만들었습니다.</p>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#join">Join a Challenge</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+      <div class="features">
+        <div class="feature">
+          <h3>공유 공간</h3>
+          <p>채팅방과 게시판을 통해 실시간 소통하세요.</p>
+        </div>
+        <div class="feature">
+          <h3>목표 설정</h3>
+          <p>1 ~ 3주 기간별로 목표를 설정하고 매일 도전하세요.</p>
+        </div>
+        <div class="feature">
+          <h3>매일 체크</h3>
+          <p>매일 아침마다 목표를 공유하고, 저녁 10시에 결과를 오픈합니다.</p>
+        </div>
+      </div>
 
-    <main>
-        <section id="about">
-            <h2>About Pasilmo</h2>
-            <p>Pasilmo, short for "Fail Fast Gathering," is an innovative platform inspired by the book "Fail Fast." We bring together 2 to 10 participants for a transformative three-week challenge designed to embrace failure as a stepping stone to success.</p>
-            <a href="#join" class="cta-button">Start Your Journey</a>
-        </section>
-
-        <section id="features">
-            <h2>Key Features</h2>
-            <div class="feature">
-                <h3>Collaborative Chat Rooms</h3>
-                <p>Connect with your group through real-time chat, fostering a supportive community as you navigate your challenges together.</p>
-            </div>
-            <div class="feature">
-                <h3>Interactive Bulletin Board</h3>
-                <p>Share insights, post updates, and celebrate milestones on our community bulletin board.</p>
-            </div>
-            <div class="feature">
-                <h3>Goal Setting and Planning</h3>
-                <p>Set clear objectives for 1, 2, and 3 weeks, breaking down your journey into manageable steps.</p>
-            </div>
-            <div class="feature">
-                <h3>Daily Check-ins</h3>
-                <p>Share your goals every morning and report on your progress each evening at 10 PM, keeping yourself accountable.</p>
-            </div>
-            <div class="feature">
-                <h3>Facilitated Experience</h3>
-                <p>Benefit from the guidance of a main facilitator (host) who will lead your group through the Fail Fast process.</p>
-            </div>
-        </section>
-
-        <section id="how-it-works">
-            <h2>How Pasilmo Works</h2>
-            <ol>
-                <li><strong>Form Your Group:</strong> Gather 2-10 participants who are committed to personal growth and embracing failure.</li>
-                <li><strong>Set Your Challenge:</strong> Choose a three-week period and define your collective and individual goals.</li>
-                <li><strong>Daily Engagement:</strong> Share your daily goals each morning and report on your progress every evening.</li>
-                <li><strong>Embrace Failure:</strong> Learn from setbacks, adjust your approach, and celebrate the lessons learned.</li>
-                <li><strong>Support and Grow:</strong> Engage with your group through chat and bulletin board discussions.</li>
-                <li><strong>Reflect and Evolve:</strong> At the end of three weeks, reflect on your journey and plan your next challenge.</li>
-            </ol>
-        </section>
-
-        <section id="join">
-            <h2>Join a Pasilmo Challenge</h2>
-            <p>Ready to accelerate your growth through the power of failing fast? Join a Pasilmo challenge today!</p>
-            <form action="https://pasilmo.com/join" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="group-size">Preferred Group Size:</label>
-                <select id="group-size" name="group-size">
-                    <option value="2-4">2-4 participants</option>
-                    <option value="5-7">5-7 participants</option>
-                    <option value="8-10">8-10 participants</option>
-                </select>
-                <button type="submit" class="cta-button">Start My Pasilmo Journey</button>
-            </form>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions about Pasilmo? We're here to help!</p>
-            <p>Email: <a href="/cdn-cgi/l/email-protection#84edeae2ebc4f4e5f7ede8e9ebaae7ebe9"><span class="__cf_email__" data-cfemail="a2cbccc4cde2d2c3d1cbcecfcd8cc1cdcf">[email&#160;protected]</span></a></p>
-            <p>Phone: +1 (555) 123-4567</p>
-            <p>Follow us on social media:</p>
-            <ul>
-                <li><a href="https://twitter.com/pasilmo">Twitter</a></li>
-                <li><a href="https://facebook.com/pasilmoofficial">Facebook</a></li>
-                <li><a href="https://instagram.com/pasilmochallenge">Instagram</a></li>
-            </ul>
-        </section>
+      <div class="cta">
+        <a href="form.html" class="btn">도전에 참여하세요</a>
+      </div>
     </main>
+  <footer>
+    <p>© 2024 빠실모. Fail Fast, Succeed Faster.</p>
+  </footer>
+</body>
 
-    <footer>
-        <p>&copy; 2023 Pasilmo - Fail Fast Gathering. All rights reserved.</p>
-    </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
+</html>
